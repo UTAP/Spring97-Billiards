@@ -4,7 +4,7 @@ class BilliardsInterface {
     Table* table;
     Ball* ball;
   public:
-    BilliardsInterface();
+    BilliardsInterface(int tableWidth, int tableHeight, int ballX, int ballY, int ballVX, int ballVY);
     void moveBall(int dt);
     void setBallLocation(int x, int y);
     void setBallSpeed(int vx, int vy);

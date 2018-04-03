@@ -1,9 +1,9 @@
 #include "interface.hpp"
 
-BilliardsInterface::BilliardsInterface()
+BilliardsInterface::BilliardsInterface(int tableWidth, int tableHeight, int ballX, int ballY, int ballVX, int ballVY)
 {
-  table = new Table(100, 50);
-  ball = new Ball(10, 20, 25, 5, table);
+  table = new Table(tableWidth, tableHeight);
+  ball = new Ball(ballX, ballY, ballVX, ballVY, table);
 }
 
 void BilliardsInterface::moveBall(int dt)
